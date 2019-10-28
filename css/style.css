@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css?family=Acme&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Hind+Siliguri&display=swap');
+
+html {
+  font-size: 16px;
+}
+
+body{
+  font-family: 'Hind Siliguri', sans-serif;
+}
+
+div {
+  max-width: 60rem;
+  margin: 0 auto;
+}
+
+h1{
+  font-family: 'Acme', sans-serif;
+  font-weight: 700;
+  font-size: 3rem;
+  margin: auto;
+}
+
+h2{
+  color: #FF7582;
+  font-size: 1.3rem;
+  margin-top: 0;
+
+}
+
+main {
+  display: grid;
+  grid-template-columns: 35rem 25rem;
+
+}
+
+header {
+  background-color: #FF7582;
+  text-align: center;
+}
+
+header > p {
+  margin: 1rem;
+  margin-top: 0;
+}
+
+main > section{
+  grid-row: 2;
+  /* margin-left: 2rem; */
+  margin-right: 2rem;
+
+}
+
+section:nth-child(2) {
+  grid-row: 3;
+  /* margin-left: 2rem; */
+  margin-right: 2rem;
+}
+
+section:last-child {
+  grid-row:2 / span 2;
+  margin:0;
+
+}
+
+section:last-child > p{
+
+    margin:0;
+    font-size: 0.75rem;
+    text-align: right;
+    font-style: italic;
+
+}
+
+section:last-child > p:last-child{
+    border-left: 12px solid #FF7582;
+    background-color: lightslategray;
+    color: #FFffff;
+    padding: 0.5rem;
+    text-align: left;
+    font-size: 0.8rem;
+    font-style: normal;
+    margin-top:0.5rem;
+}
+
+img {
+  /* border: 1px #000000 solid; */
+  /* I used this instead of "border" because I want the border inside the image, so it will be aligned to the pink square in the header */
+  outline: 1px #000000 solid;
+  outline-offset: -1px;
+  display: block;
+
+  display: block;
+}
+
+ul, ol {
+  margin-top: 0;
+
+}
+
+ul{
+    list-style-type: square;
+}
+
+a:link {
+  color: lightslategray;
+  border-bottom: dotted 1px lightslategray;
+  text-decoration: none;
+}
+
+a:visited {
+  color: blue;
+  border-bottom: dotted 1px blue;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #FF7582;
+  border-bottom: dotted 1px #FF7582;
+  text-decoration: none;
+}
+
+footer p{
+    text-align: left;
+    font-size: 0.75rem;
+    padding: 0.3rem;
+}
