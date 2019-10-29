@@ -30,7 +30,7 @@ h2{
 
 main {
   display: grid;
-  grid-template-columns: 35rem 25rem;
+  grid-template-columns: 1fr 25rem;
 
 }
 
@@ -88,9 +88,7 @@ img {
   /* I used this instead of "border" because I want the border inside the image, so it will be aligned to the pink square in the header */
   outline: 1px #000000 solid;
   outline-offset: -1px;
-  display: block;
-
-  display: block;
+  width: 100%;
 }
 
 ul, ol {

@@ -3,7 +3,9 @@
   <head>
 	  <meta charset="UTF-8" />
 		<title>Chocolate Cake</title>
-		<link href="css/style.css" rel="stylesheet" />
+		<link href="css/style.css" media = "screen" rel="stylesheet" />
+    <!-- <link href="css/mobile.css" media="screen" rel="stylesheet" /> -->
+    <link href="css/print.css" media = "print" rel="stylesheet" />
 	</head>
 
 	<body>
@@ -48,7 +50,12 @@
       </section>
 
       <section>
-        <img src="img/chocolateCake.jpg" alt="Birthday chocolate cake" />
+        <picture>
+          <source media="(min-width: 55rem)" srcset="img/chocolateCake.jpg" />
+          <source media="(min-width: 45rem)" srcset="img/chocolateCake-md.jpg" />
+          <img src="img/chocolateCake-sm.jpg" alt="Birthday chocolate cake" />
+        </picture>
+
         <p>Photo by <em><a href="https://unsplash.com/@markusspiske">Markus Spiske</a></em> on <em><a href="https://unsplash.com/">Unsplash</a></em></p>
         <p>TIP: Add M&M's and canddles to your cake and make it the perfect birthday cake!</p>
       </section>

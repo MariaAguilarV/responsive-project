@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css?family=Acme&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Hind+Siliguri:400,700&display=swap');
+
+@page {
+	margin: 0.25in;
+}
+
+* {
+  color: black;
+  background: transparent;
+}
+
+body{
+  font-family: 'Hind Siliguri',sans-serif;
+  font-size: 10pt;
+  font-weight: 400;
+}
+
+div {
+	border: 1pt solid black;
+	padding: 0.1in;
+  display: inline-block;
+}
+
+h1{
+  font-family: 'Acme', sans-serif;
+  font-weight: 400;
+  font-size: 20pt;
+  margin: auto;
+}
+
+h2{
+  font-weight: 700;
+  margin-top: 0.1in;
+  font-size: 10pt;
+
+}
+
+header > p {
+  margin-top: 0;
+  font-size: 8pt;
+}
+
+header {
+  border-bottom: 1pt solid grey;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 2.5in 4.7in;
+  grid-column-gap: 0.2in;
+}
+
+/*I decided not to include the image in the print version because the chocolate cake might use too mich tint */
+section:last-child {
+  display: none;
+}
+
+ul, ol {
+  margin-top: 0;
+
+}
+
+ul{
+    list-style-type: square;
+}
+
+ul li:before {
+  font-size: 6pt;
+}
+
+footer {
+  font-size: 8pt;
+}
+
+footer a:after {
+  content: " (" attr(href) ") ";
+}
+
+footer a {
+  text-decoration: none;
+}
